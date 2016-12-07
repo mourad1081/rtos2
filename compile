@@ -1,0 +1,7 @@
+#! /bin/sh
+
+mpic++ -std=c++11 -c main.cpp -lgmp
+mpic++ -std=c++11 -c sha1.cpp -lgmp
+mpic++ -std=c++11 -c utils.cpp -lgmp
+mpic++ -o Main  main.o utils.o sha1.o -lgmp
+
